@@ -10,7 +10,10 @@ function App() {
         <div className="app-body">
           <h1>My to do list app</h1>
           <input type="text" id="taskInput" placeholder="Enter a new task" />
-          <button id="addTaskButton" onClick={() => setCount(count + 1)}>
+          <button id="increase count" onClick={() => setCount(count + 1)}>
+            Add Task
+          </button>
+          <button id="decrease count" onClick={() => setCount(count - 1)}>
             Add Task
           </button>
           <ul id="taskList">{count}</ul>
