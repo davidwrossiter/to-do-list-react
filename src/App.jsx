@@ -20,7 +20,7 @@ function App() {
               setCount(count + 1);
               setLastClicked(true);
               increase(increases + 1);
-              press(presses + 1)
+              press(presses + 1);
             }}
           >
             Add Task
@@ -31,7 +31,7 @@ function App() {
               setCount(count - 1);
               setLastClicked(false);
               decrease(decreases + 1);
-              press(presses + 1)
+              press(presses + 1);
             }}
           >
             Add Task
@@ -42,6 +42,7 @@ function App() {
           </p>
           <p>{increases}</p>
           <p>{decreases}</p>
+          <p>{presses}</p>
         </div>
       </div>
     </>
