@@ -4,6 +4,8 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
   const [lastClicked, setLastClicked] = useState(true);
+  const [increases, increase] = useState(0);
+  const [decreases, decrease] = usestate(0);
 
   return (
     <>
@@ -16,6 +18,7 @@ function App() {
             onClick={() => {
               setCount(count + 1);
               setLastClicked(true);
+              increase(increases + 1)
             }}
           >
             Add Task
@@ -25,6 +28,7 @@ function App() {
             onClick={() => {
               setCount(count - 1);
               setLastClicked(false);
+              decrease(decreases + 1)
             }}
           >
             Add Task
