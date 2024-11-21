@@ -6,6 +6,7 @@ function App() {
   const [lastClicked, setLastClicked] = useState(true);
   const [increases, increase] = useState(0);
   const [decreases, decrease] = useState(0);
+  const [presses, press] = useState(0);
 
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
               setCount(count + 1);
               setLastClicked(true);
               increase(increases + 1);
+              press(presses + 1)
             }}
           >
             Add Task
@@ -29,6 +31,7 @@ function App() {
               setCount(count - 1);
               setLastClicked(false);
               decrease(decreases + 1);
+              press(presses + 1)
             }}
           >
             Add Task
